@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity"
+    android:background="#0048B3">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="306dp"
+        app:srcCompat="@drawable/abre" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/chelsea_market"
+        android:gravity="center_horizontal"
+        android:text="Saiba a melhor opção de abastecimento do seu veiculo !"
+        android:textColor="@color/purple_200"
+        android:textSize="24sp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editPrecoAlcool"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:fontFamily="@font/chelsea_market"
+        android:hint="Preço alcool ex: 1.90 "
+        android:inputType="numberDecimal"
+        android:textColor="@color/purple_200" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editPrecoGasolina"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:fontFamily="@font/chelsea_market"
+        android:hint="Preço gasolina ex: 2.80"
+        android:inputType="numberDecimal"
+        android:textColor="@color/purple_200" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/chelsea_market"
+        android:onClick="calcularPreco"
+        android:text="Calcular" />
+
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/chelsea_market"
+        android:gravity="center_horizontal"
+        android:text="Resultado"
+        android:textColor="@color/purple_200"
+        android:textSize="20sp" />
+</LinearLayout>
